@@ -64,7 +64,7 @@ Egy meglévő eseményszűrő eltávolítható a `QObject::removeEventFilter(QOb
 
 2. Készítsünk egy grafikus felhasználói felülettel rendelkező alkalmazást, amely lehetővé teszi a felhasználók számára, hogy megadjanak egy nevet és egy telefonszámot, majd ezeket az adatokat elmenti egy szöveges állományba. A telefonszám szövegdobozába csak számjegyeket lehet beírni. Ehhez használjunk második módszert, vagyis az `Object::installEventFilter(QObject *filterObj)` metódust, hogy csak számokat lehessen a telefonszám szövegdobozába beírni.
 
-3. Készítsünk egy Notepad alkalmazást, amely egy szövegdobozból áll. A szövegdobozhoz használjunk egy saját osztályt, amelyet a [`QPlainTextEdit`](https://doc.qt.io/qt-6/qplaintextedit.html) osztályból származtassunk. Tegyük lehetővé a következő funcionalitásokat:
+3. Készítsünk egy Notepad alkalmazást, amely egy szövegdobozból áll. A szövegdobozhoz használjunk egy saját osztályt, amelyet a [`QPlainTextEdit`](https://doc.qt.io/qt-6/qplaintextedit.html) osztályból származtassunk. Tegyük lehetővé a következő funkcionalitásokat:
 
    1. Ha megnyomjuk a `Ctrl+S` billentyűkombinációt, akkor mentse el a szövegdoboz tartalmát az `output.txt` állományba. Írjuk felül a `keyPressEvent` függvényt.
 
